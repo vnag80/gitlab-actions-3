@@ -1,0 +1,8 @@
+name: task2
+on: issues
+jobs:
+  task1:
+     runs-on: ubuntu-latest
+     steps:
+       - name: deploy
+         run: echo "Deployement ${{toJSON(github.event)}}"
